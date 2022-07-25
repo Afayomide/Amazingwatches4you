@@ -1,0 +1,60 @@
+const input = document.querySelector("input")
+
+/* swiper */
+var swiperPopular = new Swiper (".swiper", {
+    spaceBetween: 30,
+    navigation: true,
+    grabCursor: true,
+    scrollbar: true,
+    centeredSlides:true,
+    autoplay:{
+        delay: 2000,
+        disableOninteraction:false,
+    },
+    breakpoints:{
+        0: {
+            slidesPerView: '1',
+        },
+        700: {
+            slidesPerView: '3',
+        },
+        900: {
+            slidesPerView: '3',
+        },
+    },
+    loop:true,
+
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      pagination: {
+        el: ".swiper-pagination",}
+});
+
+function sendMail(params){
+var tempParams ={
+    from_name: document.getElementById("fromName").value,
+    number: document.getElementById("number").value,
+    address: document.getElementById("address").value,
+    goldwatchtype: document.getElementById("goldwatchtype").value,
+    silverwatchtype: document.getElementById("silverwatchtype").value,
+    bluewatchtype: document.getElementById("bluewatchtype").value,
+    blackwatchtype: document.getElementById("blackwatchtype").value,
+};
+    emailjs.send("service_2a18hgp","template_h22glin",tempParams)
+    .then(function(res){
+        alert('Order Placed Successfuly, We will get back to you', res.text);
+        console.log("sucess",res.status)
+    })
+    error => {
+        alert( 'An error occured, Plese try again',error.text)
+        }
+    }
+
+    var Typed = new Typed(".typing", {
+        strings:["We Appreciate Our Men", "We Celebrate You", "All those responsibilities on you is not easy",],
+        typeSpeed:30,
+        backSpeed:30,
+        loop:true
+    })
