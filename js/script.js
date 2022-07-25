@@ -37,6 +37,7 @@ var tempParams ={
     from_name: document.getElementById("fromName").value,
     number: document.getElementById("number").value,
     address: document.getElementById("address").value,
+    email: document.getElementByID("email").value,
     goldwatchtype: document.getElementById("goldwatchtype").value,
     silverwatchtype: document.getElementById("silverwatchtype").value,
     bluewatchtype: document.getElementById("bluewatchtype").value,
