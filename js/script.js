@@ -36,8 +36,8 @@ function sendMail(params){
 var tempParams ={
     from_name: document.getElementById("fromName").value,
     number: document.getElementById("number").value,
+    email: document.getElementById("email").value,
     address: document.getElementById("address").value,
-    email: document.getElementByID("email").value,
     goldwatchtype: document.getElementById("goldwatchtype").value,
     silverwatchtype: document.getElementById("silverwatchtype").value,
     bluewatchtype: document.getElementById("bluewatchtype").value,
