@@ -27,11 +27,20 @@ var swiperPopular = new Swiper (".swiper", {
     navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
-      },
+          },
       pagination: {
         el: ".swiper-pagination",}
 });
 
+ function validateForm() {
+        const from_name = document.getElementById("fromName").value;
+   const number= document.getElementById("number").value;
+    const email = document.getElementById("email").value;
+    const address = document.getElementById("address").value;
+        if (from_name == null || from_name == "", address == null || address == "", number == null || number== "", email == null || email== "") {
+          alert("Please Fill All Required Field");
+          return false;}
+        else{
 function sendMail(params){
 var tempParams ={
     from_name: document.getElementById("fromName").value,
@@ -52,9 +61,14 @@ var tempParams ={
         alert( 'An error occured, Plese try again',error.text)
         }
     }
+    return sendMail()
+ }
+}
+   
+
 
     var Typed = new Typed(".typing", {
-        strings:["We Appreciate Our Men", "We Celebrate You", "All those responsibilities on you is not easy",],
+        strings:["We Appreciate Our Men", "We Celebrate You"],
         typeSpeed:30,
         backSpeed:30,
         loop:true
