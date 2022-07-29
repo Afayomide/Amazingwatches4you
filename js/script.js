@@ -34,10 +34,21 @@ var swiperPopular = new Swiper (".swiper", {
 
  function validateForm() {
         const from_name = document.getElementById("fromName").value;
-   const number= document.getElementById("number").value;
+   const number = document.getElementById("number").value;
     const email = document.getElementById("email").value;
     const address = document.getElementById("address").value;
-        if (from_name == null || from_name == "", address == null || address == "", number == null || number== "", email == null || email== "") {
+        if (from_name == null || from_name == "")
+        { alert("Please Fill All Required Field");
+        return false;}
+        else if  (address == null || address == ""){
+            alert("Please Fill All Required Field");
+            return false;
+        }
+        else if (number == null || number == ""){
+            alert("Please Fill All Required Field");
+            return false;
+        }
+         else if (email == null || email == "") {
           alert("Please Fill All Required Field");
           return false;}
         else{
