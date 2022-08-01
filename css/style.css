@@ -220,6 +220,17 @@ footer .img{
 button:hover{
 background-color: white;
 }
+.nodisplay{
+   font-weight: 900;
+   margin: 0;
+   padding: 0;
+   text-align: start;
+   display: none;
+   color: red;
+}
+.display{
+   display: block;
+}
 @media (max-width: 767px){
    h1{
       font-size: 20px;

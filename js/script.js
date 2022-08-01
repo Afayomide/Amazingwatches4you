@@ -37,6 +37,7 @@ var swiperPopular = new Swiper (".swiper", {
    const number = document.getElementById("number").value;
     const email = document.getElementById("email").value;
     const address = document.getElementById("address").value;
+    const nodisplay = document.querySelector(".nodisplay")
         if (from_name == null || from_name == "")
         { alert("Please Fill All Required Field");
         return false;}
@@ -47,6 +48,9 @@ var swiperPopular = new Swiper (".swiper", {
         else if (number == null || number == ""){
             alert("Please Fill All Required Field");
             return false;
+        }
+        else if(number.length < 11){
+            nodisplay.classList.toggle("display")
         }
          else if (email == null || email == "") {
           alert("Please Fill All Required Field");
