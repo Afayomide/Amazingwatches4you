@@ -37,7 +37,14 @@ var swiperPopular = new Swiper (".swiper", {
    const number = document.getElementById("number").value;
     const email = document.getElementById("email").value;
     const address = document.getElementById("address").value;
-    const nodisplay = document.querySelector(".nodisplay")
+    const nodisplay = document.querySelector(".nodisplay");
+     const goldwatchtype = document.getElementById("goldwatchtype").value;
+    const silverwatchtype = document.getElementById("silverwatchtype").value;
+    const bluewatchtype = document.getElementById("bluewatchtype").value;
+    const blackwatchtype = document.getElementById("blackwatchtype").value;
+    if (goldwatchtype.checked == true) {
+        temParams.push(goldwatchtype)
+    }
         if (from_name == null || from_name == "")
         { alert("Please Fill All Required Field");
         return false;}
@@ -62,10 +69,6 @@ var tempParams ={
     number: document.getElementById("number").value,
     email: document.getElementById("email").value,
     address: document.getElementById("address").value,
-    goldwatchtype: document.getElementById("goldwatchtype").value,
-    silverwatchtype: document.getElementById("silverwatchtype").value,
-    bluewatchtype: document.getElementById("bluewatchtype").value,
-    blackwatchtype: document.getElementById("blackwatchtype").value,
 };
     emailjs.send("service_2a18hgp","template_h22glin",tempParams)
     .then(function(res){
