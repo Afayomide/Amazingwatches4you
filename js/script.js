@@ -82,12 +82,3 @@ var tempParams ={
     return sendMail()
  }
 }
-   
-
-
-    var Typed = new Typed(".typing", {
-        strings:["We Appreciate Our Men", "We Celebrate You"],
-        typeSpeed:30,
-        backSpeed:30,
-        loop:true
-    })
