@@ -46,17 +46,17 @@ body{
    margin: 0;
 }
 .body{
-   margin: 0 10px;
+   margin: 0 50px;
 }
 nav{
    width: 100%;
    background-color: rgb(50, 46, 46);
-   color: white;
-   padding-bottom: 20px;
+   color: white; 
+   padding: 0;
 }
 .amazing{
    font-weight: 900;
-   font-size: larger;
+   font-size: 40px;
 }
 .headlinks{
    display: flex;
@@ -231,6 +231,10 @@ background-color: white;
 .display{
    display: block;
 }
+ a img{
+   width: 200px;
+   height: 200px;
+}
 @media (max-width: 767px){
    h1{
       font-size: 20px;
@@ -243,6 +247,9 @@ background-color: white;
    }
    .name{
       width: 200px;
+   }
+   .body{
+      margin: 15px;
    }
    .ul{
       display: flex;
@@ -275,6 +282,7 @@ background-color: white;
       margin-bottom: 10px;
    }
    .amazing{
-      padding-top: 15px;
+      padding: 5px 0;
+      font-size: 30px;
    }
 }
