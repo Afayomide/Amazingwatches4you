@@ -10,7 +10,6 @@
       <script type="text/javascript"
         src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
 </script>
-<script src="./js/swiper-bundle.min.js"></script>
 <script type="text/javascript">
    (function(){
       emailjs.init("VFdarHR2Ae_MT8hx4");
@@ -138,9 +137,15 @@
       </div>
     </footer>
   </div>
-    
-<!-- Meta Pixel Code -->
+    <script src="./js/swiper-bundle.min.js"></script>
+    <script src="./js/script.js"></script>
+    <!-- Meta Pixel Code -->
 <script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-237794636-1');
   !function(f,b,e,v,n,t,s)
   {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
   n.callMethod.apply(n,arguments):n.queue.push(arguments)};
@@ -156,5 +161,6 @@
   src="https://www.facebook.com/tr?id=593353715759604&ev=PageView&noscript=1"
 /></noscript>
 <!-- End Meta Pixel Code -->
+</script>
 </body>
 </html>
