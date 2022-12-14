@@ -85,8 +85,9 @@ var tempParams ={
 
 const changeColors = document.querySelectorAll(".diffColor")
 
-let is_color_changer= true
-for (const changeColor of changeColors) {
+for (const changeColor of changeColors) { 
+    let is_color_changer= true
+
 function colorSelector(color){
     return changeColor.style.backgroundColor=color
 }
